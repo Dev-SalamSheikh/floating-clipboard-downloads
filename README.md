@@ -1,174 +1,95 @@
 <p align="center">
-  <img src="assets/FloatingClipboard.png" alt="Floating Clipboard" width="128" height="128">
+  <img src="assets/FloatClip.png" alt="FloatClip app icon" width="112" height="112">
 </p>
 
-<h1 align="center">Floating Clipboard — Downloads</h1>
+<h1 align="center">FloatClip downloads</h1>
 
 <p align="center">
-  <b>Your clipboard, supercharged.</b><br>
-  A lightweight, privacy-first clipboard history manager for Windows 10 & 11.
+  The official public installers for FloatClip, a private clipboard-history app for Windows 10 and Windows 11.
 </p>
 
 <p align="center">
-  <img alt="Latest Release" src="https://img.shields.io/badge/latest-v1.0.0-6957E8?style=for-the-badge">
-  <img alt="Platform" src="https://img.shields.io/badge/Windows%2010%20|%2011-0078D4?style=for-the-badge&logo=windows11&logoColor=white">
-  <img alt="License" src="https://img.shields.io/badge/free-forever-22C55E?style=for-the-badge">
-  <img alt="Privacy" src="https://img.shields.io/badge/100%25%20offline-no%20telemetry-F59E0B?style=for-the-badge">
+  <img alt="Latest version" src="https://img.shields.io/badge/latest-1.6.2-ff6b35?style=flat-square">
+  <img alt="Windows" src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4?style=flat-square&logo=windows11&logoColor=white">
+  <img alt="Offline" src="https://img.shields.io/badge/data-local%20only-238636?style=flat-square">
 </p>
 
----
+## Download FloatClip 1.6.2
 
-## ⬇️ Download
+Choose the installer that matches your Windows computer:
 
-| Version | File | Size | Date |
-|---------|------|------|------|
-| **v1.0.0** (Latest) | [**Floating-Clipboard-Setup-1.0.0.exe**](https://github.com/Dev-SalamSheikh/floating-clipboard-downloads/raw/main/releases/Floating-Clipboard-Setup-1.0.0.exe) | ~54 MB | September 2026 |
+| Computer | Recommended installer | Download size | Runtime |
+| --- | --- | ---: | --- |
+| Most Intel or AMD computers (64-bit) | [**FloatClip-Setup-1.6.2.exe**](releases/FloatClip-Setup-1.6.2.exe) | 51.97 MB | Included |
+| Intel or AMD computer with .NET 10 already installed | [**FloatClip-Lite-Setup-1.6.2.exe**](releases/FloatClip-Lite-Setup-1.6.2.exe) | 5.74 MB | Requires x64 .NET 10 Desktop Runtime |
+| 32-bit Windows computer | [**FloatClip-Setup-1.6.2-x86.exe**](releases/FloatClip-Setup-1.6.2-x86.exe) | 47.87 MB | Included |
+| Windows on Arm computer | [**FloatClip-Setup-1.6.2-arm64.exe**](releases/FloatClip-Setup-1.6.2-arm64.exe) | 46.14 MB | Included |
 
-> [!NOTE]
-> This is a **self-contained installer** — no .NET runtime or any other dependency is required. Just download, install, and start using it.
+If you are unsure, use **FloatClip-Setup-1.6.2.exe**. It is the full x64 installer used by most Windows PCs and does not require a separate .NET installation.
 
----
+## Installation
 
-## 🚀 Installation Guide
+1. Download the correct `.exe` file from the table above.
+2. Exit FloatClip from its tray icon if an older version is running.
+3. Open the installer and follow the setup wizard.
+4. You can install the update over an existing FloatClip installation. Your locally stored clipboard history and settings are preserved.
+5. Launch **FloatClip** from the Start menu.
 
-### Step 1 — Download
-Click the download link above to get the latest installer (`.exe`).
+FloatClip is not currently code-signed. Windows SmartScreen may show a warning. Only continue with **More info → Run anyway** when the installer came directly from this repository.
 
-### Step 2 — Handle Windows SmartScreen
-Since the app is not yet code-signed, Windows SmartScreen may show a warning:
+## What is included
 
-1. Click **"More info"** on the SmartScreen popup.
-2. Click **"Run anyway"**.
+- Searchable clipboard history that survives restarts
+- Plain text, HTML, RTF, images, URLs, application links, and color previews
+- One-click paste back into the previously focused application
+- Folder tabs for organizing saved items
+- Automatic masking for likely passwords and sensitive text
+- Draggable, always-on-top window with resizing from every edge and corner
+- Configurable idle fade, opacity, themes, history size, and startup behavior
+- Local-only storage with no account, cloud sync, analytics, or telemetry
 
-> [!IMPORTANT]
-> Only bypass SmartScreen when you've downloaded the installer **directly from this repository**. This is the official distribution channel.
+## System requirements
 
-### Step 3 — Install
-1. Run the downloaded `.exe` file.
-2. Follow the setup wizard — it takes about 10 seconds.
-3. Choose your install location (default is recommended).
+- A supported edition of Windows 10 or Windows 11
+- Approximately 120 MB of free disk space for a full installation
+- x64, x86, or Arm64 architecture matching the selected installer
+- The Lite installer additionally requires the [x64 .NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0)
 
-### Step 4 — Launch
-- Open **Floating Clipboard** from the Start menu.
-- The app appears as a small floating window you can drag anywhere.
-- A system tray icon is also available for quick access.
+Clipboard history and settings are stored locally under `%LOCALAPPDATA%\FloatClip`.
 
-### Step 5 — (Optional) Start with Windows
-Go to **Settings** inside the app and enable **"Start with Windows"** so your clipboard history is always ready.
+## Verify your download
 
----
+Use PowerShell to calculate a checksum:
 
-## ✨ What You Get
-
-| Feature | Description |
-|---------|-------------|
-| 📋 **Clipboard History** | Automatically captures every text and image you copy |
-| 🔍 **Instant Search** | Quickly find any past clipboard entry |
-| 📌 **Pin Important Items** | Pin entries so they survive history clears |
-| 🖱️ **One-Click Paste** | Click any entry to paste it into your last active app |
-| 🪟 **Always-on-Top Window** | Draggable, resizable floating panel (min 170×170 px) |
-| ⌨️ **Global Shortcut** | `Ctrl + Shift + V` to show/hide instantly |
-| 🌗 **Light & Dark Themes** | Matches your preference |
-| 🖼️ **Image Support** | Full image preview and paste-back |
-| 🔒 **100% Offline** | No accounts, no cloud, no analytics — ever |
-| 💾 **Persistent History** | Survives app restarts and reboots |
-
----
-
-## 💻 System Requirements
-
-| Requirement | Minimum |
-|-------------|---------|
-| **OS** | Windows 10 (version 1809+) or Windows 11 |
-| **Architecture** | 64-bit (x64) Intel or AMD |
-| **Disk Space** | ~120 MB after installation |
-| **RAM** | Minimal — runs in background with negligible impact |
-| **Dependencies** | None — fully self-contained |
-
----
-
-## 🔐 Privacy & Data Storage
-
-Floating Clipboard is **completely offline**. Your clipboard data never leaves your machine.
-
-All data is stored locally at:
-```
-%LOCALAPPDATA%\Floating Clipboard\
-├── settings.json      ← Your preferences
-├── history.json       ← Clipboard history
-└── images\            ← Saved image copies
+```powershell
+Get-FileHash .\FloatClip-Setup-1.6.2.exe -Algorithm SHA256
 ```
 
-> [!TIP]
-> Delete sensitive entries when no longer needed, and use the **pause monitoring** option in Settings when handling confidential content.
+| File | SHA-256 |
+| --- | --- |
+| `FloatClip-Setup-1.6.2.exe` | `C28E9F4CF916BC14C441D7262854091775A85D4D3737D336C2C6585CABB02C87` |
+| `FloatClip-Lite-Setup-1.6.2.exe` | `FB57689AFCD5AB0E4374FBAAB05979343C024BF7BFE545152ACD37840C54D82A` |
+| `FloatClip-Setup-1.6.2-x86.exe` | `DBEAE76535EF15696CD4729D6038DD9698B7573B4601BC273FA434ABE8A9BBE6` |
+| `FloatClip-Setup-1.6.2-arm64.exe` | `9D8545DD5D270A92955C8AD78BC9D191B3B445F0C66674A7C0EEAB1F86EA8A59` |
+
+## Related repositories
+
+- [FloatClip source code](https://github.com/Dev-SalamSheikh/floating-clipboard)
+- [FloatClip website](https://github.com/Dev-SalamSheikh/floating-clipboard-website)
+- [Report an app issue](https://github.com/Dev-SalamSheikh/floating-clipboard/issues)
+
+## Release notes
+
+### 1.6.2
+
+- Added invisible resizing from every window edge and corner
+- Added folder tabs and move-to-folder item actions
+- Added automatic masking for likely sensitive clipboard content
+- Added rich clipboard previews, link actions, and color swatches
+- Improved paste focus handling, smooth scrolling, hover states, theming, and settings controls
+- Added persistent history, idle fade timing, and configurable faded opacity
+- Updated FloatClip branding and multi-architecture installers
 
 ---
 
-## ❓ FAQ
-
-<details>
-<summary><b>Is this app really free?</b></summary>
-<br>
-Yes, Floating Clipboard is completely free with no ads, subscriptions, or in-app purchases.
-</details>
-
-<details>
-<summary><b>Why does Windows SmartScreen warn me?</b></summary>
-<br>
-The installer is not yet code-signed with a Microsoft-trusted certificate. This is common for independent software. The app is safe to install when downloaded from this official repository.
-</details>
-
-<details>
-<summary><b>Can I paste into elevated (admin) applications?</b></summary>
-<br>
-Windows blocks non-elevated apps from sending input to admin-elevated windows. To paste into admin apps, run Floating Clipboard as administrator too.
-</details>
-
-<details>
-<summary><b>Does it work with images?</b></summary>
-<br>
-Yes! Floating Clipboard captures both text and images. Image paste-back depends on whether the destination app accepts bitmap data.
-</details>
-
-<details>
-<summary><b>Where is my data stored?</b></summary>
-<br>
-Everything is stored locally in <code>%LOCALAPPDATA%\Floating Clipboard\</code>. Nothing is sent to any server.
-</details>
-
-<details>
-<summary><b>How do I uninstall?</b></summary>
-<br>
-Use <b>Settings → Apps → Floating Clipboard → Uninstall</b> in Windows, or run the uninstaller from the installation directory.
-</details>
-
----
-
-## 🔗 Links
-
-| | |
-|---|---|
-| 🌐 **Website** | [floatingclipboard.salamsheikh.com](https://floatingclipboard.salamsheikh.com) |
-| 💻 **Source Code** | [github.com/Dev-SalamSheikh/floating-clipboard](https://github.com/Dev-SalamSheikh/floating-clipboard) |
-| 🐛 **Report Issues** | [Open an issue](https://github.com/Dev-SalamSheikh/floating-clipboard/issues) |
-
----
-
-## 📋 Changelog
-
-### v1.0.0 — September 2026
-- 🎉 Initial release
-- Clipboard history for text and images
-- Draggable, resizable always-on-top floating window
-- Global `Ctrl + Shift + V` hotkey
-- Search, pin, and delete entries
-- Light and dark theme support
-- System tray integration
-- Configurable settings (startup, always-on-top, history size, and more)
-- Self-contained Windows installer (no .NET required)
-
----
-
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/Dev-SalamSheikh">Salam Sheikh</a>
-</p>
+<p align="center">Official FloatClip distribution maintained by <a href="https://github.com/Dev-SalamSheikh">Dev-SalamSheikh</a>.</p>
